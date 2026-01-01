@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti | Vama Soc. Coop. - Antincendio e Sicurezza</title>
+    <meta name="description" content="Contatta Vama per preventivi, informazioni sui servizi antincendio, accessibilità e sicurezza sul lavoro in Valle d'Aosta.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Version Switcher (Demo Only) -->
+    <div class="version-switcher">
+        <span>Layout:</span>
+        <button class="switcher-btn active" data-version="a">A - Mappa Focus</button>
+        <button class="switcher-btn" data-version="b">B - Info Focus</button>
+    </div>
+
+    <!-- ============================================== -->
+    <!-- VERSION A: Mappa Focus -->
+    <!-- ============================================== -->
+    <div id="version-a" class="version-container active">
+
+        <!-- Header A -->
+        <header class="header header-a">
+            <div class="container header-inner">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">VAMA</span>
+                    <span class="logo-tagline">Antincendio & Sicurezza</span>
+                </a>
+
+                <nav class="nav-main">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="antincendio.html" class="nav-link">Antincendio</a></li>
+                        <li><a href="#" class="nav-link">Accessibilità</a></li>
+                        <li><a href="#" class="nav-link">Sicurezza</a></li>
+                        <li><a href="#" class="nav-link">Segnaletica</a></li>
+                        <li><a href="chi-siamo.html" class="nav-link">Chi siamo</a></li>
+                        <li><a href="contatti.html" class="nav-link active">Contatti</a></li>
+                    </ul>
+                </nav>
+
+                <a href="tel:+390165554851" class="header-cta">
+                    <i data-lucide="phone" class="icon"></i>
+                    <span>0165 554851</span>
+                </a>
+
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Page Hero -->
+        <section class="page-hero page-hero-contact">
+            <div class="container">
+                <h1 class="page-title">Contattaci</h1>
+                <p class="page-subtitle">Siamo a tua disposizione per preventivi e informazioni</p>
+            </div>
+        </section>
+
+        <!-- Contact Section A - Map Focus -->
+        <section class="contact-page contact-page-a">
+            <div class="container">
+                <div class="contact-layout-map">
+                    <!-- Map Side -->
+                    <div class="contact-map-wrapper">
+                        <div class="contact-map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2774.8!2d7.3167!3d45.7375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDQ0JzE1LjAiTiA3wrAxOScwMC4xIkU!5e0!3m2!1sit!2sit!4v1234567890"
+                                width="100%"
+                                height="450"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                        <div class="contact-address-card">
+                            <div class="address-icon">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div class="address-info">
+                                <h3>Vieni a trovarci</h3>
+                                <p>Via Grand Eyvia 15<br>11100 Aosta (AO)</p>
+                                <a href="https://maps.google.com/?q=Via+Grand+Eyvia+15+Aosta" target="_blank" class="btn btn-outline btn-sm">
+                                    Indicazioni stradali <i data-lucide="external-link" class="icon-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form Side -->
+                    <div class="contact-form-wrapper">
+                        <div class="contact-form-header">
+                            <h2>Richiedi informazioni</h2>
+                            <p>Compila il form e ti ricontatteremo entro 24 ore lavorative.</p>
+                        </div>
+
+                        <form class="contact-form-full">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="nome-a">Nome e Cognome *</label>
+                                    <input type="text" id="nome-a" name="nome" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="azienda-a">Azienda</label>
+                                    <input type="text" id="azienda-a" name="azienda">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email-a">Email *</label>
+                                    <input type="email" id="email-a" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="telefono-a">Telefono *</label>
+                                    <input type="tel" id="telefono-a" name="telefono" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="servizio-a">Servizio di interesse</label>
+                                <select id="servizio-a" name="servizio">
+                                    <option value="">Seleziona un servizio</option>
+                                    <option value="antincendio">Antincendio</option>
+                                    <option value="accessibilita">Accessibilità</option>
+                                    <option value="sicurezza">Sicurezza Lavoro</option>
+                                    <option value="segnaletica">Segnaletica</option>
+                                    <option value="altro">Altro</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="messaggio-a">Messaggio *</label>
+                                <textarea id="messaggio-a" name="messaggio" rows="5" required placeholder="Descrivi la tua richiesta..."></textarea>
+                            </div>
+                            <div class="form-group form-checkbox">
+                                <input type="checkbox" id="privacy-a" name="privacy" required>
+                                <label for="privacy-a">Ho letto e accetto la <a href="#">Privacy Policy</a> *</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">
+                                <i data-lucide="send" class="icon"></i>
+                                Invia richiesta
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Info Cards -->
+        <section class="contact-info-section">
+            <div class="container">
+                <div class="contact-info-grid">
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">
+                            <i data-lucide="phone"></i>
+                        </div>
+                        <h3>Telefono</h3>
+                        <p>Chiamaci per informazioni immediate</p>
+                        <a href="tel:+390165554851" class="contact-info-link">0165 554851</a>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">
+                            <i data-lucide="mail"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>Scrivici per preventivi e richieste</p>
+                        <a href="mailto:vamaservizi@libero.it" class="contact-info-link">vamaservizi@libero.it</a>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">
+                            <i data-lucide="clock"></i>
+                        </div>
+                        <h3>Orari</h3>
+                        <p>Siamo operativi</p>
+                        <span class="contact-info-text">Lun - Ven: 9:00 - 17:00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Domande frequenti</h2>
+                    <p class="section-subtitle">Risposte rapide alle domande più comuni</p>
+                </div>
+
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3><i data-lucide="help-circle" class="icon-sm"></i> Quanto tempo richiede un preventivo?</h3>
+                        <p>Rispondiamo alle richieste di preventivo entro 24 ore lavorative. Per urgenze, chiamaci direttamente.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3><i data-lucide="help-circle" class="icon-sm"></i> Servite tutta la Valle d'Aosta?</h3>
+                        <p>Sì, operiamo su tutto il territorio valdostano con interventi rapidi e assistenza completa.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3><i data-lucide="help-circle" class="icon-sm"></i> Offrite sopralluoghi gratuiti?</h3>
+                        <p>Sì, per progetti di una certa entità offriamo sopralluoghi gratuiti per valutare le esigenze specifiche.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3><i data-lucide="help-circle" class="icon-sm"></i> Quali sono i tempi di intervento?</h3>
+                        <p>Per manutenzioni programmate concordiamo le date. Per urgenze, interveniamo entro 24-48 ore.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <div class="logo">
+                            <span class="logo-text">VAMA</span>
+                            <span class="logo-tagline">Antincendio & Sicurezza</span>
+                        </div>
+                        <p class="footer-desc">
+                            Dal 1985 il partner di riferimento per la sicurezza in Valle d'Aosta.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                            <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-links">
+                        <h4>Servizi</h4>
+                        <ul>
+                            <li><a href="#">Antincendio</a></li>
+                            <li><a href="#">Accessibilità</a></li>
+                            <li><a href="#">Sicurezza Lavoro</a></li>
+                            <li><a href="#">Segnaletica</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links">
+                        <h4>Azienda</h4>
+                        <ul>
+                            <li><a href="chi-siamo.html">Chi siamo</a></li>
+                            <li><a href="#">I nostri partner</a></li>
+                            <li><a href="contatti.html">Contatti</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-contact">
+                        <h4>Contatti</h4>
+                        <address>
+                            <p>
+                                <i data-lucide="map-pin" class="icon-sm"></i>
+                                Via Grand Eyvia 15<br>
+                                11100 Aosta (AO)
+                            </p>
+                            <p>
+                                <i data-lucide="phone" class="icon-sm"></i>
+                                <a href="tel:+390165554851">0165 554851</a>
+                            </p>
+                            <p>
+                                <i data-lucide="mail" class="icon-sm"></i>
+                                <a href="mailto:vamaservizi@libero.it">vamaservizi@libero.it</a>
+                            </p>
+                            <p>
+                                <i data-lucide="clock" class="icon-sm"></i>
+                                Lun - Ven: 9:00 - 17:00
+                            </p>
+                        </address>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Vama Soc. Coop. a r.l. - P.IVA XXXXXXXXX</p>
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- ============================================== -->
+    <!-- VERSION B: Info Focus -->
+    <!-- ============================================== -->
+    <div id="version-b" class="version-container">
+
+        <!-- Top Bar B -->
+        <div class="top-bar">
+            <div class="container top-bar-inner">
+                <div class="top-bar-info">
+                    <span><i data-lucide="map-pin" class="icon-sm"></i> Via Grand Eyvia 15, Aosta</span>
+                    <span><i data-lucide="phone" class="icon-sm"></i> 0165 554851</span>
+                    <span><i data-lucide="clock" class="icon-sm"></i> Lun-Ven 9:00-17:00</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header B -->
+        <header class="header header-b">
+            <div class="container header-inner">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">VAMA</span>
+                    <span class="logo-tagline">Antincendio & Sicurezza</span>
+                </a>
+
+                <nav class="nav-main">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="antincendio.html" class="nav-link">Antincendio</a></li>
+                        <li><a href="#" class="nav-link">Accessibilità</a></li>
+                        <li><a href="#" class="nav-link">Sicurezza</a></li>
+                        <li><a href="#" class="nav-link">Segnaletica</a></li>
+                        <li><a href="chi-siamo.html" class="nav-link">Chi siamo</a></li>
+                        <li><a href="contatti.html" class="nav-link active">Contatti</a></li>
+                    </ul>
+                </nav>
+
+                <a href="#contact-form-b" class="btn btn-primary">
+                    Scrivici
+                </a>
+
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Contact Hero B -->
+        <section class="contact-hero-b">
+            <div class="container">
+                <div class="contact-hero-content">
+                    <h1>Come possiamo aiutarti?</h1>
+                    <p>Siamo a tua disposizione per consulenze, preventivi e assistenza tecnica.</p>
+                </div>
+
+                <div class="contact-hero-cards">
+                    <a href="tel:+390165554851" class="contact-hero-card">
+                        <div class="contact-hero-icon">
+                            <i data-lucide="phone"></i>
+                        </div>
+                        <div class="contact-hero-text">
+                            <span class="contact-hero-label">Chiama ora</span>
+                            <span class="contact-hero-value">0165 554851</span>
+                        </div>
+                    </a>
+
+                    <a href="mailto:vamaservizi@libero.it" class="contact-hero-card">
+                        <div class="contact-hero-icon">
+                            <i data-lucide="mail"></i>
+                        </div>
+                        <div class="contact-hero-text">
+                            <span class="contact-hero-label">Scrivi a</span>
+                            <span class="contact-hero-value">vamaservizi@libero.it</span>
+                        </div>
+                    </a>
+
+                    <a href="https://maps.google.com/?q=Via+Grand+Eyvia+15+Aosta" target="_blank" class="contact-hero-card">
+                        <div class="contact-hero-icon">
+                            <i data-lucide="map-pin"></i>
+                        </div>
+                        <div class="contact-hero-text">
+                            <span class="contact-hero-label">Vieni a trovarci</span>
+                            <span class="contact-hero-value">Via Grand Eyvia 15, Aosta</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section B -->
+        <section id="contact-form-b" class="contact-form-section-b">
+            <div class="container">
+                <div class="contact-form-layout-b">
+                    <div class="contact-form-info-b">
+                        <h2>Richiedi un preventivo gratuito</h2>
+                        <p>Compila il form con i dettagli della tua richiesta. Ti ricontatteremo entro 24 ore lavorative con una proposta personalizzata.</p>
+
+                        <div class="contact-benefits">
+                            <div class="contact-benefit">
+                                <i data-lucide="check-circle"></i>
+                                <span>Preventivo gratuito e senza impegno</span>
+                            </div>
+                            <div class="contact-benefit">
+                                <i data-lucide="check-circle"></i>
+                                <span>Risposta entro 24 ore</span>
+                            </div>
+                            <div class="contact-benefit">
+                                <i data-lucide="check-circle"></i>
+                                <span>Sopralluogo gratuito per progetti complessi</span>
+                            </div>
+                            <div class="contact-benefit">
+                                <i data-lucide="check-circle"></i>
+                                <span>Assistenza dedicata post-vendita</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-hours-b">
+                            <h3><i data-lucide="clock" class="icon-sm"></i> Orari di apertura</h3>
+                            <div class="hours-list">
+                                <div class="hours-row">
+                                    <span>Lunedì - Venerdì</span>
+                                    <span>9:00 - 17:00</span>
+                                </div>
+                                <div class="hours-row">
+                                    <span>Sabato - Domenica</span>
+                                    <span>Chiuso</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form-card-b">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nome-b">Nome *</label>
+                                <input type="text" id="nome-b" name="nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cognome-b">Cognome *</label>
+                                <input type="text" id="cognome-b" name="cognome" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="azienda-b">Azienda / Ente</label>
+                            <input type="text" id="azienda-b" name="azienda" placeholder="Opzionale">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email-b">Email *</label>
+                                <input type="email" id="email-b" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono-b">Telefono *</label>
+                                <input type="tel" id="telefono-b" name="telefono" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="servizio-b">Di cosa hai bisogno?</label>
+                            <select id="servizio-b" name="servizio">
+                                <option value="">Seleziona un'area</option>
+                                <option value="antincendio">Antincendio (estintori, impianti, manutenzione)</option>
+                                <option value="accessibilita">Accessibilità (montascale, elevatori)</option>
+                                <option value="sicurezza">Sicurezza Lavoro (DPI, abbigliamento)</option>
+                                <option value="segnaletica">Segnaletica (cartelli, cantieristica)</option>
+                                <option value="formazione">Formazione antincendio</option>
+                                <option value="altro">Altro / Non so ancora</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="messaggio-b">Descrivi la tua richiesta *</label>
+                            <textarea id="messaggio-b" name="messaggio" rows="4" required placeholder="Es: Avrei bisogno di un preventivo per la manutenzione degli estintori del mio ristorante..."></textarea>
+                        </div>
+                        <div class="form-group form-checkbox">
+                            <input type="checkbox" id="privacy-b" name="privacy" required>
+                            <label for="privacy-b">Accetto la <a href="#">Privacy Policy</a> e acconsento al trattamento dei dati *</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">
+                            Invia richiesta
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section B -->
+        <section class="map-section-b">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Dove siamo</h2>
+                    <p class="section-subtitle">Raggiungi facilmente la nostra sede ad Aosta</p>
+                </div>
+            </div>
+            <div class="map-full-width">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2774.8!2d7.3167!3d45.7375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDQ0JzE1LjAiTiA3wrAxOScwMC4xIkU!5e0!3m2!1sit!2sit!4v1234567890"
+                    width="100%"
+                    height="400"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Footer B -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <div class="logo">
+                            <span class="logo-text">VAMA</span>
+                            <span class="logo-tagline">Antincendio & Sicurezza</span>
+                        </div>
+                        <p class="footer-desc">
+                            Dal 1985 il partner di riferimento per la sicurezza in Valle d'Aosta.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                            <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-links">
+                        <h4>Servizi</h4>
+                        <ul>
+                            <li><a href="#">Antincendio</a></li>
+                            <li><a href="#">Accessibilità</a></li>
+                            <li><a href="#">Sicurezza Lavoro</a></li>
+                            <li><a href="#">Segnaletica</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links">
+                        <h4>Azienda</h4>
+                        <ul>
+                            <li><a href="chi-siamo.html">Chi siamo</a></li>
+                            <li><a href="#">I nostri partner</a></li>
+                            <li><a href="contatti.html">Contatti</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-contact">
+                        <h4>Contatti</h4>
+                        <address>
+                            <p>
+                                <i data-lucide="map-pin" class="icon-sm"></i>
+                                Via Grand Eyvia 15<br>
+                                11100 Aosta (AO)
+                            </p>
+                            <p>
+                                <i data-lucide="phone" class="icon-sm"></i>
+                                <a href="tel:+390165554851">0165 554851</a>
+                            </p>
+                            <p>
+                                <i data-lucide="mail" class="icon-sm"></i>
+                                <a href="mailto:vamaservizi@libero.it">vamaservizi@libero.it</a>
+                            </p>
+                            <p>
+                                <i data-lucide="clock" class="icon-sm"></i>
+                                Lun - Ven: 9:00 - 17:00
+                            </p>
+                        </address>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Vama Soc. Coop. a r.l. - P.IVA XXXXXXXXX</p>
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
