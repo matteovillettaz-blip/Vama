@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "WebFetch(domain:www.vama-aosta.it)",
+      "WebSearch",
+      "Bash(python -m http.server:*)",
+      "Bash(npx --version:*)",
+      "Bash(npx serve:*)",
+      "Bash(findstr:*)",
+      "Bash(timeout /t)",
+      "Bash(git init:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nInitial commit: Vama website with 4 pages\n\nPages created:\n- index.html: Homepage with 2 layout versions \\(A: Hero Bold, B: Content First\\)\n- chi-siamo.html: About page with 2 versions \\(A: Storytelling, B: Corporate\\)\n- contatti.html: Contact page with 2 versions \\(A: Map Focus, B: Info Focus\\)\n- antincendio.html: Fire safety service page with 2 versions \\(A: Visual, B: Detail\\)\n\nFeatures:\n- Modern CSS with custom properties\n- Responsive design \\(mobile-first\\)\n- Lucide icons integration\n- Google Fonts \\(Inter\\)\n- Version switcher for A/B comparison\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(gh --version:*)",
+      "Bash(git remote add:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}

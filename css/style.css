@@ -1384,13 +1384,48 @@ address {
         --container-padding: var(--spacing-4);
     }
 
-    .nav-main,
+    .nav-main {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--color-white);
+        box-shadow: var(--shadow-lg);
+        padding: var(--spacing-4);
+        z-index: 999;
+    }
+
+    .nav-main.mobile-open {
+        display: block;
+    }
+
+    .nav-main .nav-list {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .nav-main .nav-link {
+        display: block;
+        padding: var(--spacing-3) var(--spacing-4);
+        border-bottom: 1px solid var(--color-gray-100);
+        border-radius: 0;
+    }
+
+    .nav-main .nav-link:last-child {
+        border-bottom: none;
+    }
+
     .header-cta {
         display: none;
     }
 
     .mobile-menu-btn {
         display: flex;
+    }
+
+    .header-inner {
+        position: relative;
     }
 
     .top-bar-info {
@@ -3629,5 +3664,74 @@ address {
 
     .service-intro-content h1 {
         font-size: var(--font-size-3xl);
+    }
+}
+
+/* Service Benefits Section */
+.service-benefits {
+    padding: var(--spacing-16) 0;
+    background: var(--color-gray-50);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-6);
+    margin-top: var(--spacing-10);
+}
+
+.benefit-card {
+    background: var(--color-white);
+    padding: var(--spacing-6);
+    border-radius: var(--radius-xl);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+}
+
+.benefit-icon {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, var(--color-primary) 0%, #d32f4a 100%);
+    border-radius: var(--radius-xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    margin: 0 auto var(--spacing-4);
+}
+
+.benefit-icon svg {
+    width: 28px;
+    height: 28px;
+}
+
+.benefit-card h3 {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--color-gray-900);
+    margin-bottom: var(--spacing-2);
+}
+
+.benefit-card p {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-600);
+    line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .benefits-grid {
+        grid-template-columns: 1fr;
     }
 }

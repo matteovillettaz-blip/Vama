@@ -73,13 +73,40 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Mobile menu toggle (basic implementation)
+    // Mobile menu toggle
     const mobileMenuBtns = document.querySelectorAll('.mobile-menu-btn');
 
     mobileMenuBtns.forEach(btn => {
         btn.addEventListener('click', function() {
-            // In a full implementation, this would toggle a mobile menu
-            alert('Menu mobile - da implementare nella versione finale');
+            const header = this.closest('.header');
+            const nav = header.querySelector('.nav-main');
+            const isOpen = nav.classList.contains('mobile-open');
+
+            if (isOpen) {
+                nav.classList.remove('mobile-open');
+                this.innerHTML = '<i data-lucide="menu"></i>';
+            } else {
+                nav.classList.add('mobile-open');
+                this.innerHTML = '<i data-lucide="x"></i>';
+            }
+
+            // Re-initialize icons
+            lucide.createIcons();
+        });
+    });
+
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('.nav-main .nav-link').forEach(link => {
+        link.addEventListener('click', function() {
+            const nav = this.closest('.nav-main');
+            const header = nav.closest('.header');
+            const btn = header.querySelector('.mobile-menu-btn');
+
+            if (nav.classList.contains('mobile-open')) {
+                nav.classList.remove('mobile-open');
+                btn.innerHTML = '<i data-lucide="menu"></i>';
+                lucide.createIcons();
+            }
         });
     });
 
