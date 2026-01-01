@@ -17,7 +17,8 @@
       "Bash(git push:*)",
       "Bash(git add:*)",
       "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd Accessibilità page and fix mobile menu\n\nChanges:\n- Add accessibilita.html with 2 versions \\(Visual, Detail\\)\n- Implement working mobile menu toggle with JS\n- Add mobile menu CSS styles for responsive nav\n- Update navigation links across all pages\n- Add benefits section CSS styles\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
-      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd Sicurezza Lavoro page\n\nChanges:\n- Add sicurezza.html with 2 versions \\(Visual, Detail\\)\n- Update navigation links across all pages\n- Add DPI, formazione and consulenza sections\n- Process steps and benefits grid\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd Sicurezza Lavoro page\n\nChanges:\n- Add sicurezza.html with 2 versions \\(Visual, Detail\\)\n- Update navigation links across all pages\n- Add DPI, formazione and consulenza sections\n- Process steps and benefits grid\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit:*)"
     ]
   }
 }
